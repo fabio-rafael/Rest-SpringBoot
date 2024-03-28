@@ -1,0 +1,17 @@
+server:
+  port: 8888
+
+# Configuraçoes do banco de dados MySQL
+spring:
+  datasource:
+   driver-class-name: com.mysql.jdbc.Driver
+  # Configuraçoes adicionais do Hibernate
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+
+springdoc:
+  pathsToMatch: /api/**/v1/**
+  swagger-ui:
+    use-root-path: true
